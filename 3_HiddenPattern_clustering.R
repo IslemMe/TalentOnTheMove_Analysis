@@ -18,10 +18,10 @@ df <- data.frame(
 ) %>% 
   distinct()
 
-# Step 1: Create a unique list of origin countries
+# Step 1: Create a unique list of Research countries
 # origin_countries <- unique(df$origin_country)
 research_countries <- unique(df$research_country)
-# Step 2: Create a binary matrix where each paper has 1 for origin countries involved and 0 for others
+# Step 2: Create a binary matrix where each paper has 1 for research countries involved and 0 for others
 binary_matrix <- data.frame(matrix(0, nrow = length(research_countries), ncol = length(unique(df$paper_id))))
 colnames(binary_matrix) <- unique(df$paper_id)
 rownames(binary_matrix) <- research_countries
@@ -33,24 +33,8 @@ for(i in 1:nrow(df)) {
   binary_matrix[research, as.character(paper)] <- 1
 }
 
-# analysis based on origin 
 
 
-# org_countries <- unique(df$origin_country)
-# # Step 2: Create a binary matrix where each paper has 1 for origin countries involved and 0 for others
-# binary_matrix <- data.frame(matrix(0, nrow = length(org_countries), ncol = length(unique(df$paper_id))))
-# colnames(binary_matrix) <- unique(df$paper_id)
-# rownames(binary_matrix) <- org_countries
-# 
-# # Step 3: Fill the matrix with 1s for origin countries involved in each paper
-# for(i in 1:nrow(df)) {
-#   paper <- df$paper_id[i]
-#   org <- df$origin_country[i]
-#   binary_matrix[org, as.character(paper)] <- 1
-# }
-
-
-# end origin
 View(binary_matrix)
 
 
