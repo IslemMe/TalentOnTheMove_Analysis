@@ -1,6 +1,6 @@
 
 # --import prepared Data
-# source("DeepAnalysis/0_DataToUse.R")
+source("0_DataToUse.R")
 
 # Create a list of unique countries as nodes_1_2
 nodes_1_2 <- data.frame(

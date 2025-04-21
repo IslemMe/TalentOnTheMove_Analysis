@@ -2,7 +2,7 @@
 library(factoextra)
 library(vegan)  # for vegdist(data, method = "jaccard")
 # load("DataExtraction/Data/Data_WithCountryNamesInfo.RData")
-load("DataExtraction/Data/Data_for_hidden_collab.RData")
+load("Data/Data_for_hidden_collab.RData")
 #----------------Prepare the data
 data_for_graph <- Data_for_hidden_collab%>% 
   select(c(pmid,countryAffiliation,auteur))
