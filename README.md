@@ -17,7 +17,5 @@ The goal is of research is to Mapping Global Researcher Mobility and Collaborati
 
 
 ## 📫 Contact
-
-Islem Meherzi  
-📍 Tunis, Tunisia  
-✉️ meherziislem@gmail.com
+--
+--
