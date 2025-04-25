@@ -1,6 +1,6 @@
 # Mapping Global Researcher Mobility and Collaboration in Mental Health
 
-This repository contains the data and analysis code used in the study: **"Talent on the Move: Exporters, Attractors, and Collaboration Clusters in Mental Health Research"**.  
+This repository contains the data and analysis code used in the study: **"From Home to Lab: Exploring Talent Migration and Collaborative Clusters in Mental Health Research"**.  
 The goal is of research is to Mapping Global Researcher Mobility and Collaboration in Mental Health using A Name-Origin-Based Bibliometric Approach.
 
 ## 📂 Repository Structure
